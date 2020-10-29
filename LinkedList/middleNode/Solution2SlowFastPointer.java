@@ -36,7 +36,14 @@ public class Solution2SlowFastPointer {
 			}
 			System.out.println("null");
 		}
+	
 		//find middle node 
+		//Initial : slow->head		fast->head.next
+		//IF node pointed by fast is not null then we can visit that node
+			//So move slow by one position ahead
+			//Also move fast by one position ahead
+			//AGAIN IF node pointed by fast is not null move ONLY fast one position ahead
+		//NOW Check again IF fast is pointing to null node
 		public Node getMiddleNode()
 		{
 			//set slow and fast pointer
